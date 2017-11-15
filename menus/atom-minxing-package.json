@@ -1,26 +1,306 @@
 {
   "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Toggle atom-minxing-package",
-        "command": "atom-minxing-package:toggle"
-      }
-    ]
-  },
-  "menu": [
-    {
-      "label": "Packages",
-      "submenu": [
-        {
-          "label": "atom-minxing-package",
-          "submenu": [
-            {
-              "label": "Toggle",
-              "command": "atom-minxing-package:toggle"
-            }
+      "atom-text-editor .lines": [{
+          "label": "敏行",
+          "submenu": [{
+                  "label": "打包",
+                  "command": "Minxing:buildToMinxing"
+              },
+              {
+                  "label": "wifi页面预览(ctrl-o)",
+                  "command": "Minxing:previewWifi"
+              },
+              {
+                  "label": "wifi增量同步(ctrl-i)",
+                  "command": "Minxing:syncWifi"
+              },
+              {
+                  "label": "wifi 全量同步",
+                  "command": "Minxing:syncAllWifi"
+              },
+              {
+                  "label": "查看 App日志",
+                  "command": "Minxing:wifiLog"
+              },
+              {
+                  "label": "查看ip与端口",
+                  "command": "Minxing:wifiInfo"
+              }
           ]
-        }
-      ]
-    }
-  ]
+
+      }],
+      ".tree-view": [{
+          "label": "敏行",
+          "submenu": [{
+                  "label": "新建项目模板",
+                  "submenu": [{
+                      "label": "APICloud",
+                      "submenu": [{
+                              "label": "空白应用",
+                              "command": "Minxing:addProjectTemplate,type=APICloud,template=default"
+                          },
+                          {
+                              "label": "底部导航",
+                              "command": "Minxing:addProjectTemplate,type=APICloud,template=bottom"
+                          },
+                          {
+                              "label": "首页导航",
+                              "command": "Minxing:addProjectTemplate,type=APICloud,template=home"
+                          },
+                          {
+                              "label": "侧边导航",
+                              "command": "Minxing:addProjectTemplate,type=APICloud,template=slide"
+                          },
+                          {
+                              "label": "测试模版",
+                              "command": "Minxing:addProjectTemplate,type=APICloud,template=test"
+                          }
+                      ]
+                  }, {
+                      "label": "H5",
+                      "submenu": [{
+                              "label": "H5测试1",
+                              "command": "Minxing:addProjectTemplate,type=html5,template=h5test-1"
+                          },
+                          {
+                              "label": "H5测试2",
+                              "command": "Minxing:addProjectTemplate,type=html5,template=h5test-2"
+                          },
+                          {
+                              "label": "红包测试",
+                              "command": "Minxing:addProjectTemplate,type=html5,template=JIANHANG_HONGBAO"
+                          },
+                          {
+                              "label": "www_all",
+                              "command": "Minxing:addProjectTemplate,type=html5,template=www_all"
+                          }
+                      ]
+                  }]
+
+              },
+              {
+                  "label": "查看 App日志",
+                  "command": "Minxing:wifiLog"
+              },
+              {
+                  "label": "查看ip与端口",
+                  "command": "Minxing:wifiInfo"
+              }
+          ]
+      }],
+      ".tree-view .file,.directory": [{
+          "label": "敏行",
+          "submenu": [{
+                  "label": "打包",
+                  "command": "Minxing:buildToMinxing"
+              },
+              {
+                  "label": "wifi页面预览(ctrl-o)",
+                  "command": "Minxing:previewWifi"
+              },
+              {
+                  "label": "wifi增量同步(ctrl-i)",
+                  "command": "Minxing:syncWifi"
+              },
+              {
+                  "label": "wifi 全量同步",
+                  "command": "Minxing:syncAllWifi"
+              },
+              {
+                  "label": "新建页面框架",
+                  "submenu": [{
+                      "label": "APICloud",
+                      "submenu": [{
+                              "label": "page001",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page001"
+                          },
+                          {
+                              "label": "page002",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page002"
+                          },
+                          {
+                              "label": "page003",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page003"
+                          },
+                          {
+                              "label": "page004",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page004"
+                          },
+                          {
+                              "label": "page005",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page005"
+                          },
+                          {
+                              "label": "page006",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page006"
+                          },
+                          {
+                              "label": "page007",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page007"
+                          },
+                          {
+                              "label": "page008",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page008"
+                          },
+                          {
+                              "label": "page009",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page009"
+                          },
+                          {
+                              "label": "page010",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page010"
+                          },
+                          {
+                              "label": "page011",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page011"
+                          },
+                          {
+                              "label": "page012",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page012"
+                          },
+                          {
+                              "label": "page013",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page013"
+                          },
+                          {
+                              "label": "page014",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page014"
+                          },
+                          {
+                              "label": "page015",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page015"
+                          },
+                          {
+                              "label": "page016",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page016"
+                          },
+                          {
+                              "label": "page017",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page017"
+                          },
+                          {
+                              "label": "page018",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page018"
+                          },
+                          {
+                              "label": "page019",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page019"
+                          },
+                          {
+                              "label": "page020",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page020"
+                          },
+                          {
+                              "label": "page021",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page021"
+                          },
+                          {
+                              "label": "page022",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page022"
+                          },
+                          {
+                              "label": "page023",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page023"
+                          },
+                          {
+                              "label": "page024",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page024"
+                          },
+                          {
+                              "label": "page025",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page025"
+                          },
+                          {
+                              "label": "page026",
+                              "command": "Minxing:addPageTemplate,type=APICloud,template=page026"
+                          }
+                      ]
+                  }, {
+                      "label": "HTML5",
+                      "submenu": [{
+                          "label": "html5-test1",
+                          "command": "Minxing:addPageTemplate,type=html5,template=html5-test1"
+                      }]
+                  }]
+              }
+          ]
+      }]
+  },
+  "menu": [{
+      "label": "Packages",
+      "submenu": [{
+          "label": "敏行",
+          "submenu": [{
+                  "label": "新建项目模板",
+                  "submenu": [{
+                      "label": "APICloud",
+                      "submenu": [{
+                              "label": "空白应用",
+                              "command": "Minxing:addProjectTemplate,type=APICloud,template=default"
+                          },
+                          {
+                              "label": "底部导航",
+                              "command": "Minxing:addProjectTemplate,type=APICloud,template=bottom"
+                          },
+                          {
+                              "label": "首页导航",
+                              "command": "Minxing:addProjectTemplate,type=APICloud,template=home"
+                          },
+                          {
+                              "label": "侧边导航",
+                              "command": "Minxing:addProjectTemplate,type=APICloud,template=slide"
+                          },
+                          {
+                              "label": "测试模版",
+                              "command": "Minxing:addProjectTemplate,type=APICloud,template=test"
+                          }
+                      ]
+                  }, {
+                      "label": "H5",
+                      "submenu": [{
+                              "label": "H5测试1",
+                              "command": "Minxing:addProjectTemplate,type=html5,template=h5test-1"
+                          },
+                          {
+                              "label": "H5测试2",
+                              "command": "Minxing:addProjectTemplate,type=html5,template=h5test-2"
+                          },
+                          {
+                              "label": "红包测试",
+                              "command": "Minxing:addProjectTemplate,type=html5,template=JIANHANG_HONGBAO"
+                          },
+                          {
+                              "label": "www_all",
+                              "command": "Minxing:addProjectTemplate,type=html5,template=www_all"
+                          }
+                      ]
+                  }]
+
+              }, {
+                  "label": "打包",
+                  "command": "Minxing:buildToMinxing"
+              },
+              {
+                  "label": "wifi页面预览(ctrl-o)",
+                  "command": "Minxing:previewWifi"
+              },
+              {
+                  "label": "wifi增量同步(ctrl-i)",
+                  "command": "Minxing:syncWifi"
+              },
+              {
+                  "label": "wifi 全量同步",
+                  "command": "Minxing:syncAllWifi"
+              },
+              {
+                  "label": "查看 App 日志",
+                  "command": "Minxing:wifiLog"
+              },
+              {
+                  "label": "查看ip与端口",
+                  "command": "Minxing:wifiInfo"
+              }
+          ]
+      }]
+  }]
 }

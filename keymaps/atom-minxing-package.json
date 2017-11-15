@@ -1,5 +1,6 @@
 {
-  "atom-workspace": {
-    "ctrl-alt-o": "atom-minxing-package:toggle"
+  ".minxing-view-dialog atom-text-editor[mini]": {
+    "enter": "core:confirm",
+    "escape": "core:cancel"
   }
 }
