@@ -10,7 +10,7 @@
     "应用模板",
     "日志输出"
   ],
-  "repository": "https://github.com/MEANyehoon/atom-minxing-package.git",
+  "repository": "https://github.com/dehuinet/atom-minxing-package.git",
   "license": "GPL-3.0",
   "author": "yinhang",
   "engines": {
