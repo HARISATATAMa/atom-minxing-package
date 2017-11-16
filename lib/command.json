@@ -1,0 +1,31 @@
+{
+    "commands": [{
+        "command": "Minxing:webPreviewWifi",
+        "displayName": "敏行 Minxing：Wifi Web应用预览",
+        "description": "Minxing web preview"
+    }, {
+        "command": "Minxing:previewWifi",
+        "displayName": "敏行 Minxing：Wifi 页面预览",
+        "description": "Minxing preview file"
+    }, {
+        "command": "Minxing:syncWifi",
+        "displayName": "敏行 Minxing：Wifi 增量同步",
+        "description": "Minxing wifi sync"
+    }, {
+        "command": "Minxing:syncAllWifi",
+        "displayName": "敏行 Minxing：Wifi 全量同步",
+        "description": "Minxing wifi sync all"
+    }, {
+        "command": "Minxing:wifiLog",
+        "displayName": "敏行 Minxing：日志查看",
+        "description": "Minxing wifi log"
+    }, {
+        "command": "Minxing:wifiInfo",
+        "displayName": "敏行 Minxing：IP与端口",
+        "description": "Minxing wifi IP and port"
+    }, {
+        "command": "Minxing:buildToMinxing",
+        "displayName": "敏行 Minxing：打包",
+        "description": "Minxing build"
+    }]
+}
